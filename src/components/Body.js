@@ -7,7 +7,7 @@ const Body = () => {
     const fetchData = async () => {
       const data = await fetch("https://fakestoreapi.com/products");
       const json = await data.json();
-      console.log(json);
+      // console.log(json);
       setProducts(json);
     };
     fetchData();

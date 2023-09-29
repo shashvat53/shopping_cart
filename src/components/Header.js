@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const cartItem = useSelector((store) => store.cart.items);
-
+  console.log(cartItem);
   return (
     <div className="shadow-lg">
       <div className="p-[10px_20px]  sm:max-w-[1200px] mx-auto flex justify-between items-center sm:py-[10px]">
@@ -15,7 +15,7 @@ const Header = () => {
             <Link to="/">Home</Link>
           </h4>
           <h4 className="text-sm sm:text-xl font-semibold  hover:text-purple-500 transition duration-300 ease-in-out">
-            <Link to="/cart">Cart ({cartItem})</Link>
+            <Link to="/cart">Cart: ({cartItem.length})</Link>
           </h4>
         </div>
       </div>
@@ -24,3 +24,6 @@ const Header = () => {
 };
 
 export default Header;
+
+// 8448682985
+// bhoomi tech Zone
